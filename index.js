@@ -12,5 +12,12 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
-}
+  return tutorials.map((line) => {
+    const items = line.split(' ');
+    const capitalizeItems = items.map( 
+      (items) => items.charAt(0).toUpperCase() + items.substring(1)).join(' ')
+    
+      return capitalizeItems
+    })}
+
+    console.log(titleCased)
